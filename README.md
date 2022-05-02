@@ -46,7 +46,7 @@ cd Webots-SummitXL
 Workspace file description:
 - `explore` Exploration algorithm
 - `localization` Kalman filter localization
-- `map_2D` 2D construction
+- `map_2D` Two-dimensional mapping
 - `map_3D` Three-dimensional mapping
 - `navigation` navigation
 - `simulator` webots simulator
@@ -55,12 +55,14 @@ Workspace file description:
 `ros2+webots-install.sh` Install ros2 + webots and some tools        
 `environmental-install.sh` Install the environment     
 
+`gmapping-explore.sh`  Autonomous exploration software using gmapping's map     
+`cartographer-explore.sh`  Autonomous exploration software using cartographer's map     
 > First run requires chmod +x, with LF at the end of the line
 
 ## ROS2 FOXY + Webots R2022a and environment installation
 ROS2 + Webots installation script:  
 [ros2+webots-install.sh](scripts/ros2+webots-install.sh)        
-Contains  `ros-foxy` `webots` `terminator` `curl` `vim`       
+Contains  `ros-foxy` `webots2022a` `terminator` `curl` `vim`       
 
 Environment installation script:        
 [`environmental-install.sh`](scripts/environmental-install.sh)     
@@ -79,11 +81,17 @@ cd ~/Webots-SummitXL
 ```bash
 cd ~/Webots-SummitXL/workspace
 colcon build
-colcon build --packages-ignore lio_sam
 ```
 > If the compilation fails, check for missing packages and compile again
 
 ## Run
+Two scripts are provided to run the program.  
+Gmapping:
+[gmapping-explore.sh](scripts/gmapping-explore.sh)      
+Cartographer:
+[cartographer-explore.sh](scripts/cartographer-explore.sh)         
+
+Manual operation
 ``` bash
 # Launching simulator
 ros2 launch simulator robot.launch.py
@@ -101,11 +109,8 @@ ros2 launch cartographer cartographer.launch.py
 ros2 launch navigation nav2.launch.py
 ros2 launch explore_lite explore.launch.py
 
-
 # Launch 3D map (Optional)
 ros2 launch lio_sam run.launch.py
-
-
 
 # Robot keyboard control (Optional)
 ros2 run simulator keyboard
