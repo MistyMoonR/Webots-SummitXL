@@ -65,7 +65,7 @@ ROS2 + Webots installation script:
 Contains  `ros-foxy` `webots2022a` `terminator` `curl` `vim`       
 
 Environment installation script:        
-[`environmental-install.sh`](scripts/environmental-install.sh)     
+[environmental-install.sh](scripts/environmental-install.sh)     
 Contains  `webots_ros2` `robot-localization` `navigation2` `gtsam` `cartographer`  `octomap`
 
 ```bash

@@ -24,4 +24,4 @@ sudo apt install -y ros-foxy-octomap*
 
 sudo apt install -y ros-foxy-cartographer*
 
-echo "source ~/COMP390-webots/workspace/install/local_setup.bash" >> ~/.bashrc
+echo "source ~/Webots-SummitXL/workspace/install/local_setup.bash" >> ~/.bashrc
