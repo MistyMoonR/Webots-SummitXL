@@ -8,6 +8,20 @@ System environment:
 - Webots R2022a
 
 ------------------
+## The components of the system
+
+![IMG](pictures/21.png)
+
+The software framework for this project is divided into five main components which relate to each other as shown in the following diagram
+
+![IMG](pictures/2.1.1.png)
+
+## Implementation
+
+![IMG](pictures/webots-HW.png)
+
+------------------
+
 ## Download git files
 
 It is best to put the whole folder under the `/home/[your computer name]` directory
@@ -42,6 +56,10 @@ cd Webots-SummitXL
     ├── navigation
     └── simulator
 ```
+
+## The data structures and algorithms used by the system
+
+![IMG](pictures/22.png)
 
 Workspace file description:
 - `explore` Exploration algorithm
@@ -122,3 +140,12 @@ If it doesn't work, check the environment variables in the .bashrc file
 ```bash
 source ~/Webots-SummitXL/workspace/install/local_setup.bash
 ```
+
+
+## Screenshots
+
+![IMG](pictures/Screenshot%20from%202022-04-30%2017-42-43.png)
+
+![IMG](pictures/Screenshot%20from%202022-05-02%2005-57-51.png)
+
+![IMG](pictures/lio_sam_ubuntu.png)
